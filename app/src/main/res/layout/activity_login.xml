@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#009688">
+
+    <TextView
+        android:id="@+id/login_LoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:text="ĐĂNG NHẬP"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffffff"
+        android:hint="  Tài Khoản"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/login_LoginText"
+        app:layout_constraintStart_toStartOf="@+id/login_LoginText"
+        app:layout_constraintTop_toBottomOf="@+id/login_LoginText"
+        android:drawableLeft="@drawable/user"
+        />
+
+    <EditText
+        android:id="@+id/login_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#ffffff"
+        android:hint="  Mật Khẩu"
+        android:drawableLeft="@drawable/padlock"
+        android:password="true"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/login_Username"
+        app:layout_constraintTop_toBottomOf="@+id/login_Username" />
+
+    <CheckBox
+        android:id="@+id/login_NhoMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="Nhớ Mật Khẩu"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="@+id/login_Password"
+        app:layout_constraintTop_toBottomOf="@+id/login_Password" />
+
+    <TextView
+        android:id="@+id/layout_QuenMatKhau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quên Mật Khẩu ?"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBaseline_toBaselineOf="@+id/login_NhoMatKhau"
+        app:layout_constraintLeft_toRightOf="@+id/login_NhoMatKhau"
+        app:layout_constraintRight_toRightOf="@+id/login_Password" />
+
+    <TextView
+        android:id="@+id/login_DangKi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chưa có tài khoản? Tạo tài khoản"
+        android:onClick="TaoTaiKhoan"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintLeft_toLeftOf="@+id/login_Password"
+        app:layout_constraintRight_toRightOf="@+id/login_Password"
+        app:layout_constraintTop_toBottomOf="@+id/login_NhoMatKhau" />
+
+    <Button
+        android:id="@+id/login_DangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="logIn"
+        android:text="Đăng Nhập"
+        android:textColor="#009688"
+        app:layout_constraintLeft_toLeftOf="@id/login_Password"
+        app:layout_constraintRight_toRightOf="@id/login_Password"
+        app:layout_constraintTop_toBottomOf="@+id/login_DangKi" />
+</androidx.constraintlayout.widget.ConstraintLayout>

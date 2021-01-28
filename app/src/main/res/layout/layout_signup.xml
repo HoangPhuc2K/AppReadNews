@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#009688">
+
+    <TextView
+        android:id="@+id/Signup_LoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:text="ĐĂNG KÍ"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Signup_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffffff"
+        android:hint="  Tài Khoản"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/Signup_LoginText"
+        app:layout_constraintStart_toStartOf="@+id/Signup_LoginText"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_LoginText"
+        android:drawableLeft="@drawable/user"
+        />
+
+    <EditText
+        android:id="@+id/Signup_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#ffffff"
+        android:hint="  Mật Khẩu"
+        android:drawableLeft="@drawable/padlock"
+        android:textColorHint="#FFFFFF"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Username"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Username"
+        app:layout_constraintRight_toRightOf="@+id/Signup_Username"
+        />
+
+    <EditText
+        android:id="@+id/Signup_VaPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ffffff"
+        android:drawableLeft="@drawable/padlock"
+        android:hint=" Xác Nhận Mật Khẩu"
+        android:inputType="textPassword"
+        android:layout_marginRight="30dp"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/Signup_Password"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_Password"
+        app:layout_constraintRight_toRightOf="@+id/Signup_Password"
+        />
+
+    <Button
+        android:id="@+id/Signup_DangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="Đăng Kí"
+        android:textColor="#009688"
+        app:layout_constraintLeft_toLeftOf="@id/Signup_Password"
+        app:layout_constraintRight_toRightOf="@id/Signup_Password"
+        app:layout_constraintTop_toBottomOf="@+id/Signup_VaPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/action_home"
+        android:icon="@drawable/article_white_18"/>
+    <item
+        android:id="@+id/action_video"
+        android:title="@string/action_video"
+        android:icon="@drawable/video_library_white_18"/>
+    <item
+        android:id="@+id/action_calendar"
+        android:title="@string/action_calendar"
+        android:icon="@drawable/date_range_white_18"/>
+    <item
+        android:id="@+id/action_trend"
+        android:title="@string/action_trend"
+        android:icon="@drawable/trending_up_white_18"/>
+    <item
+        android:id="@+id/action_user"
+        android:title="@string/action_user"
+        android:icon="@drawable/person_outline_white_18"/>
+</menu>
